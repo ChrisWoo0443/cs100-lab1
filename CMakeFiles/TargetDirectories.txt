@@ -1,0 +1,5 @@
+/home/csmajs/cwoo017/lab-1-setting-up-your-environment-ChrisWoo0443/CMakeFiles/area_calculator.dir
+/home/csmajs/cwoo017/lab-1-setting-up-your-environment-ChrisWoo0443/CMakeFiles/bigger_area_calculator.dir
+/home/csmajs/cwoo017/lab-1-setting-up-your-environment-ChrisWoo0443/CMakeFiles/shape_area_calculator.dir
+/home/csmajs/cwoo017/lab-1-setting-up-your-environment-ChrisWoo0443/CMakeFiles/edit_cache.dir
+/home/csmajs/cwoo017/lab-1-setting-up-your-environment-ChrisWoo0443/CMakeFiles/rebuild_cache.dir
