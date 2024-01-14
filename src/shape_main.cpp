@@ -10,22 +10,26 @@ int main(){
     int base;
     int width;
 
-    cout << "Triangle or Rectangle? (t/r)" << endl;
+    cout << "Triangle or Rectangle? (Enter t/r)" << endl;
     cin >> shape;
 
     if(shape == 't'){
         triangle t1;
         cout << "Give me the base" << endl;
         cin >> base;
-        while(base < 0) {
-            cout << "Error, value less than 0 try again or not an int" << endl;
+        while(base < 0 || cin.fail()) {
+            cin.clear();
+            cin.ignore(256, '\n'); 
+            cout << "Error, value less than 0 or not an int, try again" << endl;
             cin >> base;
         }
         t1.set_base(base);
         cout << "give me the height" << endl;
         cin >> height;
-        while(height < 0) {
-            cout << "Error, value less than 0 try again" << endl;
+        while(height < 0 || cin.fail()) {
+            cin.clear();
+            cin.ignore(256, '\n'); 
+            cout << "Error, value less than 0 or not an int, try again" << endl;
             cin >> height;
         }
         t1.set_height(height);
@@ -35,15 +39,19 @@ int main(){
         Rectangle r1;
         cout << "Give me the width" << endl;
         cin >> width;
-        while(width < 0) {
-            cout << "Error, value less than 0 try again" << endl;
+        while(width < 0 || cin.fail()) {
+            cin.clear();
+            cin.ignore(256, '\n'); 
+            cout << "Error, value less than 0 or not an int, try again" << endl;
             cin >> width;
         }
         r1.set_width(width);
         cout << "Give me the height" << endl;
         cin >> height;
-        while(height < 0) {
-            cout << "Error, value less than 0 try again" << endl;
+        while(height < 0 || cin.fail()) {
+            cin.clear();
+            cin.ignore(256, '\n'); 
+            cout << "Error, value less than 0 or not an int, try again" << endl;
             cin >> height;
         }
         r1.set_height(height);
